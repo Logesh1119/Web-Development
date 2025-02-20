@@ -1,0 +1,128 @@
+.jsprojects {
+  height: 100vh;
+  padding: 15vh 0px;
+  overflow-y: scroll;
+}
+.jsprojects iframe {
+  margin-bottom: 7px;
+}
+.jsprojects a.github {
+  margin-bottom: 35px;
+}
+.jsprojects a.github img {
+  width: 20px;
+  margin-top: -5px;
+  transition: 0.2s ease-in;
+  margin-bottom: 0px;
+}
+.jsprojects .btn:hover img {
+  filter: brightness(0) invert(1);
+}
+.jsprojects .js img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.jsprojects {
+  padding: 20px 0;
+}
+
+.projectblock {
+  border-bottom: 2px solid #333; /* Thicker dark gray line */
+  padding-bottom: 20px; /* Space below the content */
+  margin-bottom: 20px; /* Space between blocks */
+}
+
+.projectblock img {
+  width: 100%; /* Responsive image */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.projectblock h3 {
+  margin-top: 10px;
+}
+
+.projectblock ul {
+  padding-left: 20px;
+}
+
+.projectblock li {
+  margin-bottom: 5px;
+}
+
+.github img {
+  width: 20px; /* Adjust size as needed */
+  height: 20px;
+}
+.jsprojects {
+  padding: 20px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.projects-wrapper {
+  display: flex;
+  align-items: flex-start; /* Align items to the top */
+  justify-content: center;
+  position: relative;
+}
+
+.project {
+  flex: 1;
+  max-width: 45%; /* Adjust as needed to ensure both projects fit side by side */
+  margin: 0 15px;
+  box-sizing: border-box;
+}
+
+.project-content {
+  padding: 20px;
+  border: 1px solid #ddd; /* Light border for visual separation */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.project h3 {
+  margin: 15px 0 10px;
+}
+
+.project p {
+  margin-bottom: 15px;
+  font-size: 14px; /* Reduced font size for descriptions */
+}
+
+.project ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 15px;
+}
+
+.project li {
+  margin-bottom: 5px;
+  font-size: 14px; /* Consistent font size */
+}
+
+.github img {
+  width: 20px; /* Adjust size as needed */
+  height: 20px;
+}
+
+.vertical-line {
+  width: 2px; /* Thickness of the line */
+  background-color: #333; /* Color of the line */
+  height: 100%; /* Full height of the container */
+  margin: 0 20px; /* Space around the line */
+}

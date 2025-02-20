@@ -1,0 +1,139 @@
+#home {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#home .rightcontent {
+  padding: 40% 0px;
+}
+
+#home .imgsec {
+  position: relative;
+  display: flex; /* Center the content */
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#home .imgsec img {
+  width: 270px; /* Reduced width for the profile image */
+  height: auto; /* Maintain aspect ratio */
+  z-index: 3;
+  border-radius: 5px;
+  margin-bottom: 20px; 
+  margin-left: 604px;/* Space below the image for social icons */
+}
+
+#home .imgsec .bgblack {
+  background-color: #000;
+  position: absolute;
+  width: 90%;
+  height: 101vh;
+  top: -11%;
+  left: -10vh;
+  z-index: 1;
+}
+
+#home h1::before {
+  content: "";
+  border-left: 3px solid #000;
+  left: -30px;
+  top: 0px;
+  position: absolute;
+  height: 200%;
+  animation: beforeani 2s linear;
+}
+
+#home h1 {
+  position: relative;
+}
+
+#home h2 {
+  margin-bottom: 0px;
+}
+
+#home .socialmedia {
+  display: flex; /* Align icons horizontally */
+  justify-content: center; /* Center horizontally */
+  margin-top: 10px; /* Add margin on top to separate from the profile image */
+  z-index: 3; /* Ensure it stays above the background */
+}
+
+#home .socialmedia a {
+  margin: 0 8px; /* Add some spacing between the icons */
+}
+
+#home .socialmedia img {
+  width: 18px; /* Reduced size for smaller icons */
+  height: 18px; /* Reduced size for smaller icons */
+  margin: 0 8px; /* Space around each icon */
+}
+
+@keyframes beforeani {
+  from {
+    top: -12px;
+    height: 0;
+  }
+  to {
+    top: 0px;
+    height: 200%;
+  }
+}
+
+/* Media query adjustments */
+@media (max-width: 767px) {
+  #home .imgsec img {
+    width: 250px; /* Smaller width on smaller screens */
+    margin-left: 560px; /* Center properly */
+  }
+  #home .rightcontent {
+    padding: 0;
+    text-align: center; /* Center text on smaller screens */
+    padding-bottom: 90px;
+  }
+  #home {
+    padding-top: 80px;
+    height: initial;
+    position: initial;
+  }
+  #home .socialmedia {
+    margin-top: 20px;
+    margin-left: 2900px; /* Adjust for spacing */
+  }
+  #home .rightcontent .btn {
+    margin-top: 30px;
+  }
+  #home .socialmedia a {
+    margin-right: 10px;
+  }
+}
+#home {
+  padding-top: 80px;
+  height: initial;
+  position: initial;
+}
+#home .socialmedia {
+  margin-top: 20px; /* Adjust for spacing */
+  margin-left: 580px; /* Reset margin-left on smaller screens */
+}
+#home .rightcontent .btn {
+  margin-top: 30px;
+}
+#home .socialmedia a {
+  margin-right: 10px;
+}
+.rightcontent {
+  /* Other existing styles */
+  text-align: left; /* Ensure text is aligned to the left */
+}
+
+.rightcontent h1, .rightcontent h2 {
+  margin: 0; /* Remove any default margin */
+}
+
+.rightcontent h2 {
+  margin-top: 10px; /* Adjust spacing if needed */
+}

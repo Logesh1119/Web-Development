@@ -1,0 +1,66 @@
+#services {
+  padding: 70px 0; /* Add padding at the top and bottom for spacing */
+  background-color: #f9f9f9; /* Optional: background color for contrast */
+}
+
+.section-title {
+  color: #000;
+  font-size: 2.5rem; /* Increase font size for the section title */
+  margin-bottom: 40px; /* Space below the title */
+}
+
+.services-content {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: center; /* Center items horizontally */
+  gap: 30px; /* Add space between service boxes */
+}
+
+.servicebox {
+  text-align: center;
+  background-color: #000;
+  border-radius: 20px;
+  padding: 70px 80px; /* Increase padding for more space inside */
+  transition: 0.4s linear;
+  border: 5px double #fff;
+  width: 100%; /* Make boxes full width of container, will adjust to content */
+  max-width: 500px; /* Increase max width for larger boxes */
+}
+
+.servicebox img {
+  filter: brightness(0) invert(1);
+  width: 70%; /* Increase image width */
+  margin: 20px 0; /* Adjust space around image */
+}
+
+.servicebox h4 {
+  color: #fff;
+  font-size: 1.5rem; /* Increase font size for service names */
+  margin-top: 10px; /* Add space above the service name */
+}
+
+.servicebox:hover {
+  background-color: #fff;
+  border: 5px double #000;
+  transform: scale(1.05); /* Slightly larger scale on hover */
+}
+
+.servicebox:hover h4 {
+  color: #000;
+}
+
+.servicebox:hover img {
+  filter: none;
+}
+
+@media (max-width: 7px) {
+  #services {
+    padding: 30px 0; /* Adjust for smaller screens */
+  }
+  
+  .servicebox {
+    width: 90%; /* Adjust width for smaller screens */
+    max-width: 300px; /* Adjust maximum width for responsiveness */
+  }
+}
+
